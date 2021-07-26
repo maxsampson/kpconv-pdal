@@ -85,10 +85,25 @@ class LASDataset(PointCloudDataset):
                                15: 'transmission_tower',
                                16: 'wire_structure_connector',
                                17: 'bridge_deck',
-                               18: 'high_noise'}
+                               18: 'high_noise',
+                               19: 'overhead_structure',
+                               64: 'wire',
+                               65: 'car',
+                               66: 'truck',
+                               67: 'boat',
+                               68: 'barrier',
+                               69: 'railroad_car',
+                               70: 'elevated_walkway',
+                               71: 'covered_walkway',
+                               72: 'pier/dock',
+                               73: 'fence',
+                               74: 'tower',
+                               75: 'crane',
+                               76: 'silo/storage_tank',
+                               77: 'bridge_structure'}
 
         # List of classes ignored during training (can be empty)
-        self.ignored_labels = np.array([1,3,4,7,8,10,11,12,13,14,15,16,18])
+        self.ignored_labels = np.array([1,3,4,7,8,9,10,11,12,13,14,15,16,18,19,64,65,66,67,68,69,70,71,72,73,74,75,76,77])
 
         # Initialize a bunch of variables concerning class labels
         self.init_labels()

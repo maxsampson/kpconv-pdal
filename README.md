@@ -21,7 +21,7 @@ At this point, you should be able to train models and predict classification lab
 python train_LAS.py
 ```
 
-The current means of predicting labels is to modify `test_LAS.py` to point to the results log directory, and to uncomment line 24 of `datasets/LAS.py`. You can then run the following.
+The current means of predicting labels is to modify `test_LAS.py` to point to the results log directory, and to uncomment line 42 of `datasets/LAS.py`. You can then run the following.
 
 ```bash
 python test_LAS.py

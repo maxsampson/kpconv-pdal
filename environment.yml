@@ -4,7 +4,7 @@ channels:
   - pytorch
   - defaults
 dependencies:
-  #- cudatoolkit=10.1
+  - cudatoolkit=10.1
   - torchvision==0.5.0
   - pytorch==1.4.0
   - pyyaml
@@ -12,7 +12,7 @@ dependencies:
   - mayavi
   - scikit-learn
   - pyqt=5
-  #- cudnn=7.6
+  - cudnn=7.6
   - matplotlib
   - python-pdal
   - tensorboard

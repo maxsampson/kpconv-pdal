@@ -37,6 +37,9 @@ from models.architectures import KPFCNN
 
 from torch.utils.tensorboard import SummaryWriter
 
+# Start of some automation
+from automation import *
+
 
 # ----------------------------------------------------------------------------------------------------------------------
 #
@@ -145,7 +148,7 @@ class LASConfig(Config):
     #####################
 
     # Maximal number of epochs
-    max_epoch = 500
+    max_epoch = epochs_num()
 
     # Learning rate management
     learning_rate = 1e-2
@@ -185,8 +188,8 @@ class LASConfig(Config):
     saving_path = None
 
     # Dataset folder
-    path = '/home/chambbj/data/ml-datasets/US3D/oma-only'
-    writer = SummaryWriter('/home/chambbj/data/tensorboard-runs/new/demo')
+    path = file_location()
+    writer = SummaryWriter(tens_dirc())
 
 
 # ----------------------------------------------------------------------------------------------------------------------
